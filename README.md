@@ -11,8 +11,13 @@ The desktop and terminal application source is maintained together in the privat
 
 - **Desktop:** graphical MP3 metadata editor for album-release preparation.
   Current desktop version: **0.1.0-beta.2**, macOS Apple Silicon and Windows x64.
-- **Terminal:** independent, artwork-led terminal edition. Mac, Linux and Windows
-  downloads will be listed only after their native release checks pass.
+- **Terminal:** independent, artwork-led terminal edition. **0.1.0-beta.1** for
+  Mac Apple Silicon, Linux x86-64 and Windows x64.
+
+### Download releases
+
+- [Terminal — Mac / Linux / Windows](https://github.com/cygnostik/quick-id3-website/releases/tag/terminal-v0.1.0-beta.1)
+- [Desktop — Mac / Windows](https://github.com/cygnostik/quick-id3-website/releases/tag/desktop-v0.1.0-beta.2)
 
 Download requirements and signing information are stated in each release. These
 are proprietary beta applications, free to evaluate, not open-source app releases.
