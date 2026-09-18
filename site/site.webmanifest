@@ -1,0 +1,25 @@
+{
+  "id": "/",
+  "name": "Quick·ID3",
+  "short_name": "Quick·ID3",
+  "description": "Desktop MP3 tag editor for album-release preparation.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "theme_color": "#050A0F",
+  "background_color": "#050A0F",
+  "icons": [
+    {
+      "src": "/assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

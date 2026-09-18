@@ -1,0 +1,86 @@
+Quick·ID3 0.1.0-beta.2 — Mac beta
+
+Desktop MP3 tag editor for album-release preparation.
+Apple Silicon Mac • macOS 27 or later
+Proprietary software • Free to evaluate
+
+INSTALL
+1. Open the disk image.
+2. Drag QuickID3.app into Applications.
+3. Eject the disk image and open QuickID3 from Applications.
+
+FIRST OPEN
+This beta is ad-hoc signed, not Developer ID signed or notarized by Apple.
+If macOS blocks it as an unidentified or unverified developer, attempt to
+open it once, then go to System Settings > Privacy & Security > Open Anyway.
+Confirm only if this is the download you intended to install.
+Do not disable Gatekeeper. If macOS reports malware or damaged software,
+stop rather than bypassing that warning.
+Apple instructions: https://support.apple.com/en-us/102445
+
+USE
+Open a folder of MP3 files. Select one track or several.
+The inspector shows shared values and [multi] where selected values differ.
+Change only the fields you want to update. Save writes ALL edited tracks
+in the current folder, including tracks no longer selected.
+
+Click a selected Track, Title, Artist or Album cell again to edit it.
+Enter or clicking away accepts the draft; Escape cancels that cell edit.
+Command-S saves. Undo and Revert apply to unsaved changes.
+The slim panel tabs hide/show the folder tree and inspector.
+The circled i enables optional tooltips.
+
+FILES
+Use ordinary local MP3 files. Existing ID3v2.3/v2.4 tag versions are retained.
+Save updates originals without re-encoding their audio. Keep a separate copy
+of irreplaceable files before evaluating this beta.
+See RELEASE-NOTES.txt for compatibility limits.
+
+LICENSES
+LICENSE.txt covers Quick·ID3. Third-party components have their own terms
+in Third-Party-Notices, also inside the app's Contents/Resources/Notices.
+Complete Qt/TagLib library sources accompany the disk image in Library-Sources.
+
+------------------------------------------------------------------------
+
+Quick·ID3 0.1.0-beta.2 — Windows x64
+
+Quick·ID3 edits MP3 metadata for album-release preparation.
+
+START
+1. Extract the entire ZIP to a writable folder. Keep QuickID3.exe, the DLLs
+   and plugin folders together; do not run the app from inside the ZIP.
+2. If the app reports a missing VCRUNTIME/MSVCP DLL, install the latest
+   Microsoft Visual C++ x64 runtime directly from Microsoft:
+   https://aka.ms/vs/17/release/vc_redist.x64.exe
+   Follow Microsoft's prompts, then reopen QuickID3.exe. Administrator
+   permission may be required.
+3. Open QuickID3.exe, browse to an MP3 folder, select tracks and edit.
+   Ctrl+S saves changes to the original files, without re-encoding audio.
+
+This portable folder does not install Quick·ID3 or require Qt/TagLib SDKs.
+The Microsoft runtime is a separate system prerequisite, not included here.
+Preferences are saved in your Windows user profile; they do not travel with
+this folder. To remove the app, close it and delete its extracted folder.
+Keep independent copies of important music before using beta software.
+
+SYSTEM
+64-bit Windows 10 version 1809 or newer, or Windows 11, on an x64 PC.
+The Qt runtime supports these systems; this beta's automated native checks
+run on Windows Server 2022. Physical multi-monitor and other Windows versions
+have not been validated by those checks. This beta is not Authenticode signed;
+Windows may show an unknown-publisher or SmartScreen warning.
+
+LICENSES AND LIBRARY SOURCES
+LICENSE.txt contains the Quick·ID3 evaluation license. Third-Party-Notices
+contains the Qt, TagLib, font, icon and Microsoft runtime notices.
+Library-Sources contains the complete Qt base 6.11.2, Qt SVG 6.11.2 and
+TagLib 2.3 source archives, including bundled third-party code and build files.
+You do not need those archives to run the app.
+
+You may modify and replace the covered libraries and debug those changes as
+permitted by their licenses. See Third-Party-Notices\LIBRARY-SOURCES.txt for
+Windows build and replacement instructions. No application source or vendor
+signing key is needed for compatible DLL replacements.
+
+See RELEASE-NOTES.txt for changes and beta limitations.

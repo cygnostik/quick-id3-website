@@ -1,0 +1,22 @@
+Quick·ID3 — proprietary beta evaluation license
+Copyright (c) 2026 Quick·ID3 contributors. All rights reserved.
+
+You may install and use this beta without charge to evaluate Quick·ID3,
+including in your own music-release and music-organization workflows.
+This permission does not transfer ownership of the software or its branding,
+and does not grant a license to its proprietary source code.
+
+You may share the original, unmodified beta download without charging for it,
+provided this license and all accompanying third-party notices remain intact.
+You may not sell the software or represent a modified copy as an official
+Quick·ID3 release without permission from the copyright holder.
+
+This beta is provided "AS IS", without warranties, to the extent permitted
+by applicable law. Keep independent copies of important files. The copyright
+holders are not liable for loss or damage arising from use of the beta to
+the extent permitted by applicable law. Mandatory legal rights are unaffected.
+
+Third-party software remains governed by its own licenses, supplied with the
+application. Nothing here restricts rights those licenses grant, including
+modification or replacement of covered libraries, or reverse engineering
+for debugging modifications to those libraries.

@@ -1,0 +1,203 @@
+/* ═══════════════════════════════════════════════════════════════════
+   ProDyn / Threadline — DESIGN TOKENS  (single source of truth)
+   v1.2 — 2026-09-05 — M15-M18 interaction add-on; values retained.
+   CP1: body 16px · 4px-grid normalization · square corners law ·
+   640px wide-phone breakpoint. CP2/2b: motion registry M1-M14,
+   additive M15-M18 contracts live in /dsm/motion/registry.json.
+   Data display D1-D10, state colors, --pd-trace, telemetry side
+   toolkit + A1 pipeline. M1 canonical = exact prodyn.ai CSS footer.
+   M9 canonical = Magnetic Confinement · Toroidal Plasmics.
+   DSM: https://agent.prodyn.ai/dsm/  (extends v2026-07-08)
+   DEFAULT PAGE ATMOSPHERE: M8 Login Particle Veil, implemented by
+   /dsm/assets/m8-login-particle-veil.css + .js. Decorative whole-page
+   grids are retired; functional chart/map/telemetry grids remain valid.
+
+   RULES OF USE (binding, for humans and agents):
+   1. No raw hex, px radius, shadow, easing, or font-family anywhere
+      outside this file. Reference tokens only.
+   2. Colors are ROLES, not swatches. Need a new color? Propose a new
+      role in the DSM first; do not inline it.
+   3. Values were extracted from live ProDyn artifacts (DSM page,
+      prodyn.ai, plasma-flame component) — this file codifies existing
+      reality, then normalizes small drift to the scales below.
+   ═══════════════════════════════════════════════════════════════════ */
+:root {
+
+  /* ── COLOR · fields ──────────────────────────────────────────── */
+  --pd-field:        #050A0F;              /* primary page field      */
+  --pd-void:         #02070B;              /* hero depth, deepest     */
+  --pd-section:      #0A1219;              /* alternate panel field   */
+  --pd-surface:      rgba(237,232,228,.025);/* faint content panels   */
+  --pd-line:         rgba(237,232,228,.08); /* hairline separations   */
+
+  /* ── COLOR · ink ─────────────────────────────────────────────── */
+  --pd-ivory:        #EDE8E4;              /* primary text/display    */
+  --pd-ivory-muted:  rgba(237,232,228,.58);/* body & support          */
+  --pd-ivory-dim:    rgba(237,232,228,.36);/* metadata, microcopy     */
+
+  /* ── COLOR · signal ──────────────────────────────────────────── */
+  --pd-signal:       #30B0D0;              /* labels, live, selected  */
+  --pd-cyan-deep:    #20708A;              /* gradients, bars, depth  */
+  --pd-spark:        #22D3EE;              /* tiny active highlights  */
+  --pd-plasma-core:  #EAFBFF;              /* white-hot flame core    */
+
+  /* ── COLOR · warm tertiary (≈5% presence max) ────────────────── */
+  --pd-copper:       #C85A2E;              /* intervention, priority  */
+  --pd-copper-deep:  #8F3F20;              /* warm depth, underpaint  */
+  --pd-copper-soft:  rgba(200,90,46,.16);  /* contained warm tint     */
+
+  /* ── COLOR · state (APPROVED 2026-07-18 — extracted from /dash
+        & /ui; same restraint rules as copper) ─────────────────────── */
+  --pd-ok:           #43D48A;              /* live, up, healthy       */
+  --pd-warn:         #E4A43A;              /* watch state (matches
+                                              DSM Amber Spark ref)    */
+  --pd-alert:        #E14B5A;              /* errors, failures —
+                                              tuned from /ui #FF4757  */
+  --pd-trace:        #87ECFF;              /* chart trace highlight —
+                                              Q: keep, or fold into
+                                              --pd-spark?             */
+
+  /* ── TYPE · families (self-hosted WOFF2 only, no CDN) ────────── */
+  --pd-font-display: 'Oxanium ProDyn', Oxanium, system-ui, sans-serif;
+  --pd-font-hud:     'Departure Mono ProDyn', 'JetBrains Mono', ui-monospace, monospace;
+  --pd-font-body:    'PP Neue Machina ProDyn', 'Oxanium ProDyn', system-ui, sans-serif;
+                     /* PPNM license-gated: falls back to Oxanium on
+                        public pages until commercial license clears  */
+
+  /* ── TYPE · scale (role-named, not size-named) ───────────────── */
+  --fs-micro:   11px;                      /* HUD labels, nav, status */
+  --fs-meta:    12px;                      /* timestamps, footnotes   */
+  --fs-body-sm: 14px;                      /* dense card copy         */
+  --fs-body:    16px;                      /* default body (locked
+                                              2026-07-17, Chris)      */
+  --fs-lead:    18px;                      /* lead paragraphs, decks  */
+  --fs-h3:      23px;
+  --fs-h2:      28px;
+  --fs-h1:      clamp(32px, 4vw, 56px);
+  --fs-display: clamp(34px, 5vw, 74px);
+  --fs-hero:    clamp(54px, 8vw, 112px);
+
+  /* ── TYPE · line heights ─────────────────────────────────────── */
+  --lh-tight:   1.05;                      /* hero/display            */
+  --lh-heading: 1.2;
+  --lh-body:    1.6;
+  --lh-relaxed: 1.7;                       /* long-form reading       */
+
+  /* ── TYPE · letter spacing ───────────────────────────────────── */
+  --ls-hud:          .12em;                /* uppercase mono labels   */
+  --ls-hud-wide:     .18em;                /* eyebrow/section marks   */
+  --ls-label:        .08em;                /* buttons, small caps     */
+  --ls-display:      -.02em;               /* large display type      */
+  --ls-display-tight:-.065em;              /* hero numerals only      */
+
+  /* ── SPACE · 4px-grid scale ──────────────────────────────────── */
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3:  12px;
+  --sp-4:  16px;
+  --sp-5:  20px;                           /* default card padding    */
+  --sp-6:  24px;
+  --sp-7:  32px;
+  --sp-8:  40px;
+  --sp-9:  56px;
+  /* section rhythm — vary between sections, don't repeat blindly    */
+  --sp-section-sm: 40px;
+  --sp-section:    64px;
+  --sp-section-lg: 96px;
+
+  /* ── SHAPE · the brand is rectilinear ────────────────────────── */
+  --r-0:    0;                             /* DEFAULT. Cards, buttons,
+                                              panels, inputs: square  */
+  --r-soft: 2px;                           /* rare: tactical bars     */
+  --r-dot:  50%;                           /* dots, particles only    */
+  --bw-hairline: 1px;                      /* default border          */
+  --bw-signal:   2px;                      /* tactical left-edge mark */
+
+  /* ── LIGHT · glow specs (what a glow IS, numerically) ────────── */
+  --glow-signal-sm: 0 0 6px  rgba(48,176,208,.60);   /* dots, ticks  */
+  --glow-signal:    0 0 12px 2px rgba(48,176,208,.45);/* live edges  */
+  --glow-signal-lg: 0 0 24px 6px rgba(48,176,208,.30);/* logo aura,
+                                                         hero accents */
+  --glow-spark:     0 0 8px  2px rgba(34,211,238,.50);
+  --glow-core:      0 0 16px 6px rgba(234,251,255,.55);
+  --glow-copper:    0 0 10px 2px rgba(200,90,46,.35); /* rare        */
+  /* atmosphere */
+  --blur-atmo: 60px;                       /* footer smoke blobs      */
+  --blur-fuse: 1.5px;                      /* fusing layered shapes   */
+
+  /* ── ALPHA · opacity steps (rest → emphasis) ─────────────────── */
+  --alpha-ghost: .03;                      /* surfaces                */
+  --alpha-line:  .08;                      /* hairlines               */
+  --alpha-rest:  .12;                      /* hidden-until-hover UI   */
+  --alpha-dim:   .36;
+  --alpha-muted: .58;
+
+  /* ── MOTION · durations ──────────────────────────────────────── */
+  --t-fast:   .3s;                         /* hover, state flips      */
+  --t-med:    .45s;                        /* reveals, micro-UI wake  */
+  --t-slow:   .9s;                         /* entrances               */
+  --t-breathe: 2.4s;                       /* component breathing     */
+  /* flame band: 1.2s–5.8s staggered (see plasma-flame component)    */
+  --t-ambient:      9s;                    /* atmosphere loops        */
+  --t-ambient-slow: 24s;                   /* large smoke drift       */
+
+  /* ── MOTION · easings ────────────────────────────────────────── */
+  --ease-brand:    ease-in-out;            /* ambient, breathing —
+                                              always alternate, never
+                                              snap to frame zero     */
+  --ease-enter:    cubic-bezier(.22,1,.36,1); /* entrances (power3)  */
+  --ease-hover:    ease;                   /* small state changes     */
+
+  /* ── LAYOUT · breakpoints (use in @media, min-width) ─────────── */
+  --bp-sm: 640px;                          /* wide-phone step —
+                                              CRITICAL: layouts must
+                                              hold on wide phones     */
+  --bp-md: 768px;                          /* stack columns below     */
+  --bp-lg: 1024px;                         /* full instrument layout  */
+  --bp-xl: 1200px;                         /* wide-field extras       */
+  /* note: CSS vars don't work in @media; these document the values.
+     Agents: hardcode 640/768/1024/1200 in media queries, nothing
+     else. Test wide-phone (640–767 landscape) explicitly.           */
+
+  /* ── LAYOUT · z-index registry ───────────────────────────────── */
+  --z-atmo:    1;                          /* atmosphere, particles   */
+  --z-content: 10;
+  --z-nav:     100;
+  --z-overlay: 1000;
+
+  /* ── DATA DISPLAY · chart tokens (PROPOSED v0.3) ─────────────── */
+  --chart-trace-w:   3px;                  /* line traces, round caps */
+  --chart-trace-glow: drop-shadow(0 0 8px rgba(48,176,208,.25));
+  --chart-grid:      rgba(237,232,228,.08);/* gridlines = --pd-line   */
+  --chart-area-a:    .28;                  /* area fill top alpha →0  */
+  --chart-bar-h:     2px;                  /* capability bar height   */
+  --chart-node-r:    3px;                  /* constellation nodes 3-4 */
+  /* chart rules: inline SVG or canvas only, no chart libraries.
+     Primary trace --pd-trace/--pd-signal, secondary --pd-ok.
+     viewBox 760x170 standard trend panel, 3 gridlines.              */
+
+  /* ── TELEMETRY · live surfaces (APPROVED 2026-07-17 — side
+        toolkit: prebuilt tokenized surfaces for real-data pages.
+        No project codenames in DSM or public artifacts.) ─────────── */
+  --blur-redact:  5px;                     /* visual mark on SERVER-
+                                              redacted placeholders.
+                                              Blur is costume, never
+                                              containment — sensitive
+                                              data must not reach the
+                                              browser at all.         */
+  --crt-line-gap: 3px;                     /* CRT scanline spacing    */
+  --crt-line-a:   .14;                     /* scanline alpha          */
+  --crt-flicker:  7s;                      /* breathe, alternate,
+                                              never strobe            */
+  --feed-row-in:  .3s;                     /* stream row entrance     */
+}
+
+/* ── reduced motion: global contract ─────────────────────────────
+   Every animated element must remain composed when frozen.        */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}

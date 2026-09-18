@@ -1,0 +1,34 @@
+Quick·ID3 0.1.0-beta.2
+
+CHANGES SINCE BETA 1
+- Fixed Save failing on Windows when opening its temporary working file.
+- Fixed the Windows application name in file properties.
+- Kept the opening window within the available desktop at enlarged scaling.
+- Rechecked Mac Save/reopen, metadata/audio preservation, selection, editing
+  and window behavior after the shared-code changes.
+
+INCLUDED
+- Local-folder MP3 browsing and native single/multiple track selection.
+- Shared and mixed metadata inspection; intentional-field edits.
+- Title, artist, album artist, album, track/disc, date, genre, composer,
+  copyright, ISRC, comments and lyrics.
+- Front-cover artwork replacement/removal.
+- Inline Track, Title, Artist and Album editing.
+- In-place Save, unsaved Undo/Redo/Revert and unsaved-change prompts.
+- Collapsible folder/inspector panels and optional tooltips.
+
+DOWNLOADS
+Mac: Apple Silicon; macOS 27 or later. Ad-hoc signed; not Apple notarized.
+Windows: x64 portable ZIP. Extract the whole folder before opening the app.
+See the README supplied with your download for setup instructions.
+No account, hosted service or library database is required.
+
+LIMITS
+MP3/ID3 only. Flagged/compressed/encrypted tags, linked files and ambiguous
+duplicate edit targets are not writable. Unsupported files show an error.
+ID3v1 and APE tags are retained, not synchronized with ID3v2 edits.
+The date field is recording date; ID3v2.3 cannot store all v2.4 date precision.
+The comment and lyrics editors target the default English identities;
+other identities are retained. Artwork editing targets the front cover.
+After a partly successful multi-file Save, failed drafts remain but the
+shared undo history is cleared.

@@ -1,0 +1,71 @@
+/* Release-focused alternative; existing canonical tokens and identity. */
+.release-mockup{background:var(--pd-field)}
+.release-mockup .wrap{max-width:1280px;width:calc(100% - 96px)}
+.release-mockup .masthead{min-height:104px;padding:0;gap:32px}
+.release-mockup .masthead .brand img{width:184px}
+.release-mockup .masthead nav{gap:32px}
+.release-mockup .masthead nav a{min-height:44px;display:inline-flex;align-items:center}
+.release-mockup .masthead nav a:last-child{color:var(--pd-signal)}
+.release-mockup .hero{grid-template-columns:1fr 1.04fr;min-height:624px;gap:48px;padding:64px 0 56px;align-items:center}
+.release-mockup .hero-copy{padding:0;min-width:0}
+.release-mockup .hero h1{font-size:clamp(60px,7.4vw,104px);line-height:1.05;font-weight:400;letter-spacing:var(--ls-display)}
+.release-mockup .release-eyebrow{font-size:11px;letter-spacing:var(--ls-label);margin-bottom:24px}
+.release-mockup .product-description{font-size:clamp(24px,2.3vw,32px);line-height:1.35;max-width:470px;margin-top:28px;color:var(--pd-ivory)}
+.release-mockup .platform-actions{margin-top:36px;gap:24px;align-items:center;flex-wrap:wrap}
+.release-mockup .button{min-height:52px;letter-spacing:0;font-size:12px}
+.release-mockup .primary{background:var(--pd-ivory);color:var(--pd-field);border-color:var(--pd-ivory)}
+.release-mockup .primary:hover{background:var(--pd-signal);border-color:var(--pd-signal);color:var(--pd-void)}
+.release-mockup .hero-requirements{font-size:11px;margin-top:20px;line-height:1.8}
+.release-mockup .hero-signing{font-size:13px;color:var(--qid-readable);margin-top:8px}
+.release-mockup .pile-group{max-width:570px}
+.release-mockup .pile-controls{padding-inline:0;font-size:10px}
+.release-mockup .facts-line{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px 32px;padding:24px 0;border-top:1px solid var(--pd-line);border-bottom:1px solid var(--pd-line);font:11px/1.6 var(--pd-font-hud);color:var(--qid-readable)}
+.release-mockup .facts-line strong{color:var(--pd-ivory);font-weight:400}
+.release-mockup .editor-section{padding:88px 0 80px}
+.release-mockup .section-heading{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:end;margin-bottom:36px}
+.release-mockup h2{font-weight:400;line-height:1.15;font-size:clamp(32px,3.2vw,44px);letter-spacing:var(--ls-display)}
+.release-mockup .section-heading p{font-size:18px;line-height:1.6;color:var(--qid-readable);max-width:540px}
+.release-mockup .editor-frame{border:1px solid var(--pd-line);background:var(--pd-void)}
+.release-mockup .editor-frame>a{display:block;line-height:0}
+.release-mockup .editor-frame img{width:100%;height:auto;display:block}
+.release-mockup .editor-frame figcaption{border-top:1px solid var(--pd-line);padding:16px 24px;display:flex;justify-content:space-between;gap:16px;align-items:center;font:11px/1.6 var(--pd-font-hud);color:var(--qid-readable)}
+.release-mockup .editor-frame figcaption a{color:var(--pd-signal);min-height:44px;display:inline-flex;align-items:center}
+.release-mockup .capability-section{display:grid;grid-template-columns:.8fr 1.4fr;gap:88px;border-top:1px solid var(--pd-line);padding:64px 0 80px}
+.release-mockup .capability-section .section-intro{font-size:18px;color:var(--qid-readable);max-width:330px;margin-top:24px}
+.release-mockup .capability-list{margin:0}
+.release-mockup .capability-list>div{display:grid;grid-template-columns:170px 1fr;gap:32px;padding:24px 0;border-bottom:1px solid var(--pd-line)}
+.release-mockup .capability-list>div:first-child{padding-top:0}
+.release-mockup .capability-list>div:last-child{border:0;padding-bottom:0}
+.release-mockup .capability-list dt{font-size:18px;color:var(--pd-ivory)}
+.release-mockup .capability-list dd{margin:0;color:var(--qid-readable);font-size:16px;line-height:1.65}
+.release-mockup .download-section{padding:64px 0 72px;grid-template-columns:.8fr 1.4fr;gap:88px}
+.release-mockup .download-details{padding:32px;background:var(--pd-surface);border:1px solid var(--pd-line)}
+.release-mockup .download-details h3{font-size:23px;font-weight:400}
+.release-mockup .release-summary dl{margin-top:32px}
+.release-mockup .release-summary dl>div{padding:12px 0;border-bottom:1px solid var(--pd-line)}
+.release-mockup .release-summary dt{width:92px}
+.release-mockup .release-summary dd{flex:1}
+.release-mockup .download-filename{font-size:10px;overflow-wrap:anywhere}
+.release-mockup .windows-status{padding-top:24px;margin-top:28px}
+.release-mockup .windows-status h3{font-size:18px}
+.release-mockup .install-section{border-top:1px solid var(--pd-line);padding:56px 0 72px;display:grid;grid-template-columns:.8fr 1.4fr;gap:88px}
+.release-mockup .install-section h2{font-size:32px}
+.release-mockup details{border-bottom:1px solid var(--pd-line)}
+.release-mockup summary{padding:20px 0;cursor:pointer;font-size:18px;min-height:64px;list-style-position:inside}
+.release-mockup summary:hover{color:var(--pd-signal)}
+.release-mockup details .answer{padding:0 0 24px;color:var(--qid-readable);line-height:1.7;font-size:16px}
+.release-mockup .answer p+p{margin-top:16px}
+.release-mockup .answer .inline-link{margin-top:16px}
+.release-mockup .install-steps{padding-left:24px}
+.release-mockup .install-steps li{padding-left:8px}
+.release-mockup .install-note{font-size:13px}
+.release-mockup .footer{min-height:144px;padding-block:24px;gap:32px;flex-wrap:wrap}
+.release-mockup .footer-links{display:flex;flex-wrap:wrap;gap:24px;font:11px/1.6 var(--pd-font-hud);color:var(--qid-readable)}
+.release-mockup .footer-links a{min-height:44px;display:inline-flex;align-items:center}
+.release-mockup .gallery{padding-top:64px}
+.release-mockup .gallery .product-note{margin:0 0 40px;max-width:720px;color:var(--qid-readable)}
+.release-mockup .gallery h1,.release-mockup .release-page h1{font-size:clamp(40px,5vw,64px)}
+.release-mockup .release-page{padding-top:64px}
+@media(max-width:1199px){.release-mockup .wrap{width:calc(100% - 64px)}.release-mockup .hero{gap:24px;min-height:560px}.release-mockup .hero h1{font-size:72px}.release-mockup .capability-section,.release-mockup .download-section,.release-mockup .install-section{gap:48px}.release-mockup .capability-list>div{grid-template-columns:130px 1fr;gap:24px}}
+@media(max-width:767px){.release-mockup .wrap{width:calc(100% - 40px)}.release-mockup .masthead{padding-top:16px;gap:8px;min-height:124px}.release-mockup .masthead nav{gap:12px}.release-mockup .hero{padding:48px 0;min-height:0;gap:24px}.release-mockup .hero h1{font-size:52px}.release-mockup .product-description{font-size:23px;margin-top:20px}.release-mockup .release-eyebrow{font-size:10px;margin-bottom:20px}.release-mockup .platform-actions{gap:12px;margin-top:24px}.release-mockup .button{font-size:11px;padding-inline:16px}.release-mockup .hero-requirements{font-size:10px}.release-mockup .facts-line{font-size:10px;justify-content:flex-start;gap:16px 32px}.release-mockup .editor-section{padding:56px 0}.release-mockup .section-heading{gap:24px;grid-template-columns:1fr 1fr}.release-mockup .section-heading p{font-size:16px}.release-mockup .capability-section,.release-mockup .download-section,.release-mockup .install-section{grid-template-columns:1fr;gap:32px;padding:48px 0}.release-mockup .capability-section .section-intro{max-width:520px;margin-top:16px}.release-mockup .download-details{padding:24px}.release-mockup .capability-list>div{grid-template-columns:160px 1fr}.release-mockup .gallery{padding-top:40px}}
+@media(max-width:639px){.release-mockup .hero{grid-template-columns:1fr;gap:40px}.release-mockup .hero h1{font-size:clamp(52px,13vw,76px)}.release-mockup .product-description{font-size:27px;max-width:380px}.release-mockup .pile-group{max-width:440px}.release-mockup .hero-signing{font-size:12px}.release-mockup .section-heading{grid-template-columns:1fr;gap:20px;margin-bottom:24px}.release-mockup .editor-frame figcaption{padding:12px 16px;align-items:flex-start;flex-direction:column;gap:4px}.release-mockup .capability-list>div{grid-template-columns:1fr;gap:12px}.release-mockup .capability-list dt{font-size:20px}.release-mockup .download-details{padding:20px}.release-mockup .download-details .button{width:100%;justify-content:space-between}.release-mockup .footer{gap:16px}.release-mockup .footer-links{gap:12px 24px}.release-mockup .facts-line{gap:12px 24px}.release-mockup .gallery .product-note{margin-bottom:24px}}

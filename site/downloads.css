@@ -1,0 +1,21 @@
+/* Equal platform choices; download first, supporting details second. */
+.simple-downloads{padding:8px 0 48px}
+.download-platforms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:64px;max-width:960px}
+.download-platform{border-top:1px solid var(--pd-line);padding-top:24px;min-width:0}
+.download-platform h2{font-size:32px}
+.platform-requirements{margin-top:16px;color:var(--qid-readable);font-size:16px;line-height:1.6;min-height:52px}
+.download-platform .button{width:100%;justify-content:space-between;margin-top:24px}
+.platform-format{margin-top:12px;font:11px/1.6 var(--pd-font-hud);color:var(--qid-readable)}
+.platform-install{margin-top:24px;color:var(--qid-readable);font-size:14px;line-height:1.6}
+.platform-signing{margin-top:12px;color:var(--qid-readable);font-size:13px;line-height:1.6}
+.platform-signing a,.download-terms a{color:var(--pd-ivory);text-decoration:underline;text-underline-offset:3px}
+.download-terms{margin-top:28px;color:var(--qid-readable);font-size:13px;line-height:1.6}
+.download-help{display:flex;flex-wrap:wrap;gap:8px 32px;margin-top:16px}
+#download-mac,#download-windows{scroll-margin-top:200px}
+.license-content{max-width:800px;padding-bottom:48px}
+.license-content section{padding:24px 0;border-top:1px solid var(--pd-line)}
+.license-content h2{font-size:28px;margin-bottom:16px}
+.license-content p{color:var(--qid-readable);line-height:1.7;margin:12px 0}
+.license-content a{color:var(--pd-ivory);text-decoration:underline;text-underline-offset:3px}
+@media(max-width:767px){.download-platforms{gap:32px}.platform-requirements{font-size:14px}.download-platform .button{font-size:11px;gap:16px}}
+@media(max-width:639px){.download-platforms{grid-template-columns:1fr;gap:32px}.platform-requirements{min-height:0}.simple-downloads{padding-top:0}.download-platform .button{font-size:12px}.download-terms{margin-top:24px}}

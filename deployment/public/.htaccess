@@ -1,0 +1,22 @@
+Options -Indexes -MultiViews
+DirectoryIndex index.html
+<IfModule mod_mime.c>
+AddType application/manifest+json .webmanifest
+AddType image/x-icon .ico
+</IfModule>
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://quickid3.com%{REQUEST_URI} [R=308,L]
+RewriteRule ^feature-requests\.html$ _form.php [END]
+RewriteRule ^feature-requests/?$ _submit.php [END]
+RewriteRule ^download/mac/?$ _download.php [END]
+RewriteRule ^download/windows/?$ _download-windows.php [END]
+<IfModule mod_headers.c>
+<FilesMatch "\.(html|css|js|xml|txt|webmanifest|ico)$">
+Header always set Cache-Control "no-cache, max-age=0, must-revalidate"
+</FilesMatch>
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-Frame-Options "DENY"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'"
+</IfModule>
